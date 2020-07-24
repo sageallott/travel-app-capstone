@@ -1,0 +1,31 @@
+@import "./base.scss";
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $scond-color;
+    padding: 30px;
+    background-image: url(https://f.hubspotusercontent10.net/hubfs/3378618/Abstract%20Images/mountains-overlay.png); 
+    background-size: cover; 
+    background-position: fixed;
+    height: 100%;
+    min-height: 400px;
+//    flex-wrap: wrap;
+   
+    
+    h1 {      
+        font-family: $header-font;
+        font-size: 50px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: $base-color;    
+    }
+    
+    .fas {
+        color: $base-color;
+        font-size: 50px;    
+    }
+    
+}

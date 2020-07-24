@@ -1,0 +1,107 @@
+@import "./base.scss";
+@media(max-width: 1070px) {
+    .temp-wrapper {
+        width: 350px;
+    }
+}
+@media(max-width: $break-point) {
+        
+    header {
+        
+        .fas {
+
+            display: none;
+        }
+    }
+    
+    .data-wrapper {
+        
+        // display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .img-wrapper {
+
+            width: 80%;
+        }
+        
+        .info {
+            
+            width: 100%;
+
+            .details {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                .temp-wrapper {
+
+                    flex-direction: column;
+                    /* overflow: hidden; */
+                    align-items: baseline;
+                    width: 400px;
+                    margin-left: 30px;
+                    
+                    .icon {
+
+                        align-self: center;
+                    }
+                }
+            }
+            
+        }
+    }
+    form {
+        span {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+}
+
+@media(max-width: $mobile_point) {
+    header {
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+    .main {
+
+        form {
+
+            align-items: flex-start;
+    
+            .dates {
+                flex-direction: column;
+                align-items: center;
+                .start {
+                    margin-right: 10px;
+                }
+                .end {
+                    margin-left: 10px;
+                }
+            }
+        }
+        
+    }
+    
+
+}
+
+@media(max-width: $point_2) {
+    header {
+        h1 {
+            font-size: 25px;
+        }
+    }
+    form {
+        .btns {
+            display: contents;
+        }
+    }
+}
+    
+
+
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take a Trip!</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Trip Planner</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <form>
+            <span class="place">
+                <label for="user-location">Destination: </label>
+                <input type="text" name="location" id="user-location" placeholder="Enter Location"
+                    class="trip-location" />
+            </span>
+            <div class="dates">
+                <span class="start">
+                    <label for="date-start">Start Date: </label>
+                    <input type="date" name="date" id="date-start" placeholder="MM/DD/YYYY" class="trip-date" />
+                </span>
+                <span class="end">
+                    <label for="date-end">End Date: </label>
+                    <input type="date" name="date" id="date-end" placeholder="MM/DD/YYYY" class="trip-date" />
+                </span>
+            </div>
+
+            <div class="btns">
+                <button type="submit" class="submit btn">Submit</button>
+                <button type="reset" class="btn-reset btn">Reset</button>
+            </div>
+        </form>
+    </main>
+
+    <section class="data-wrapper">
+        <section class="img-wrapper">
+            <img class='img'>
+        </section>
+
+        <section class="info">
+            <p class="countdown">
+                <span class="city"></span> is
+                <span class="days"></span> away!</p>
+            <p class="trip-wrapper">You will travel for
+                <span class="length"></span><span class="label-day"></span></p>
+            <div class='details'>
+                <h3>Local Weather</h3>
+                <div class='temp-wrapper'>
+                    <p class="temps"></p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <p class="attribution">
+            <br>Sage Allott<br>
+            Boston, MA
+        </p>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        } else {
+            console.log("Service Worker error");
+        }
+    </script>
+</body>
+
+</html>

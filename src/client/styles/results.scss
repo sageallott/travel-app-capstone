@@ -1,0 +1,57 @@
+@import "./base.scss";
+
+.data-wrapper { 
+    display: none;
+    flex-direction: row;
+    justify-content:space-between;
+    border-style: solid;
+    border-color: white;
+    margin: 0 20px;
+    padding: 40px 0;
+    border-radius: 15px;
+    
+    .img-wrapper {
+        width: 50%; 
+        img {
+            width: 100%;
+        }
+    }
+    
+    .info {
+        font-size: 30px;
+        width: 40%;
+        
+        .countdown { 
+            .days, .city {  
+                color: $btn-color;
+            }
+        }
+        h3 {
+            font-family: $btn-font;
+            font-weight: 100;
+            margin: 20px 0;
+            color: $font-color;  
+        }
+        
+        h4 {  
+            color: $font-color;
+            text-decoration: underline;
+            text-transform: uppercase;
+            margin: 10px 0 20px 0;
+        }
+
+        .temp-sec {
+            background-color: #fff;
+            width: 275px;
+            padding: 5px 10px 5px 0px;
+            display: flex;
+
+            .temps, .weather-info {
+                color: $btn-color;
+                background-color: $white;
+                width: 100%;
+                padding: 5px 10px 5px 0px;
+            }
+        }  
+    }
+}
