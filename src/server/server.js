@@ -16,8 +16,8 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'dist', 'index.html'))
 })
 
-app.listen(8080, function () {
+const server = app.listen(8080, function () {
     console.log('App listening on http://localhost:8080/');
 });
 
-module.exports = app
+module.exports = server
